@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Megrim&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+        <!-- Header -->
+        <header>
+            <div class="header-content">
+                <img src="assets/images/logo_notext.png" alt="Illustrated Eyeball" class="header-image">
+                <div class="header-text">
+                    <h1>Pam Tholan</h1>
+                    <p class="header-description">UX/UI Designer</p>
+                </div>
+                <nav class="navbar">
+                    <ul class="nav-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f9;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+
+
+        }
+        .contact-container {
+            max-width: 600px;
+            margin: 0 auto;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            
+        }
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+        .contact-button {
+            display: block;
+            /* width: 100%; */
+            padding: 15px;
+            margin-top: 20px;
+            background-color: #041d8c;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .contact-button:hover {
+            background-color: #1ea0e1;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0; /* Add padding to the top and bottom of the footer */
+            /* position: relative; */
+            width: 100%;
+            margin-top: auto
+
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 20px; /* Smaller font size on mobile */
+            }
+            p {
+                font-size: 14px; /* Smaller text for the paragraph */
+            }
+            .contact-button {
+                padding: 12px; /* Smaller button padding on mobile */
+                font-size: 14px; /* Smaller button text */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <h1>Contact Me</h1>
+        <p>If you would like to get in touch, please send me an email!</p>
+        <a href="mailto:pamelatholan@yahoo.com?subject=Contact%20from%20Website&body=Hello%2C%20I%20would%20like%20to%20talk%20to%20you." class="contact-button">Send Email</a>
+    </div>
+
+ <!-- Footer -->
+ <footer>
+    <p>&copy; 2024 Pam Tholan</p>
+</footer>
+
+    <script src="assets/javascript/script.js"></script>
+</body>
+</html>
