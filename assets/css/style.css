@@ -1,0 +1,242 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+
+/* Header Content Flexbox */
+.header-content {
+    display: flex;
+    justify-content:left; /* Space between the description and navigation */
+    align-items: center; /* Vertically center content */
+    width: 100%; /* Ensure the content takes full width */
+}
+
+
+.header-image {
+    width: 100px; /* Set a fixed width for the image */
+    height: auto; /* Maintain the aspect ratio of the image */
+    margin-right: 20px; /* Space between the image and the text */
+    border-radius: 50%; /* Optional: To make the image circular */
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    text-align: left; /* Optional: explicitly left-align h1 */
+    font-family: "Megrim", system-ui;
+    
+}
+
+.header-description {
+    font-size: 1.1rem;
+    color: #f4f4f4;
+    text-align: left; /* Optional: explicitly left-align description */
+    font-family: "Orbitron", sans-serif;
+    margin-left: 10px;
+}
+
+/* Navigation Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    padding-right: 20px;
+    padding-top: 60px;
+    padding-left: 680px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s, text-decoration 0.3s;
+    font-family: "Orbitron", sans-serif;
+}
+
+.nav-links a:hover {
+    color: #f4f4f4;
+    text-decoration: underline;
+}
+
+/* Hamburger Menu styles (shown when hamburger is clicked) */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: -90px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+/* Hide the hamburger icon when the menu is open */
+.hamburger.hidden {
+    display: none;
+}
+
+/* Main Content Area */
+main {
+    padding: 20px;
+}
+.bio {
+    padding-bottom: 20px;
+    /* font-family: "Garamond", sans-serif; */
+    text-align: center;
+}
+
+/* Card Container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Individual Card Styles */
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 400px; /* Fixed height for consistency */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+/* Card Image */
+.card-img {
+    width: 100%;
+    height: 200px; /* Fixed height for image */
+    object-fit: cover;
+}
+
+/* Card Content */
+.card-title {
+    font-size: 1.2rem;
+    margin: 10px;
+}
+
+.card-description {
+    flex-grow: 1; /* Allow description to take up available space */
+    padding: 0 10px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.card-button {
+    background-color: #041d8c;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: center;
+    margin: 10px;
+    border-radius: 4px;
+}
+
+.card-button:hover {
+    background-color: #1ea0e1;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0; /* Add padding to the top and bottom of the footer */
+    position: relative;
+    width: 100%;
+
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1024px) {
+    .card-container {
+        justify-content: space-around;
+    }
+    .card {
+        width: 45%; /* Two cards per row on medium screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card-container {
+        justify-content: center;
+    }
+    .card {
+        width: 100%; /* One card per row on smaller screens */
+    }
+
+    /* Hide nav links and show hamburger menu on mobile */
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    /* Hide nav links on mobile by default */
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    /* Show nav links when hamburger is clicked */
+    .nav-links.active {
+        display: flex;
+    }
+
+    /* Show hamburger icon on mobile */
+    .hamburger {
+        display: flex;
+    }
+
+    .header-image {
+        margin-right: 0;  /* Remove right margin */
+        margin-bottom: 20px;  /* Add space below the image */
+    }
+}
