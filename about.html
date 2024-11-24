@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Megrim&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+       /* General body styles */
+       body, html {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            /* display: flex; */
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            overflow-x: hidden;  /* Prevent horizontal scrolling */
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        h1, h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            text-align: left; /* Optional: explicitly left-align h1 */
+            font-family: "Megrim", system-ui;
+        }
+
+        
+        /* About Me section */
+       
+        .about-container {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            max-width: 100%;
+            margin-top: 20px;
+            padding: 40px;
+            text-align: center;
+            animation: fadeIn 1.5s ease-out;
+            box-sizing: border-box;
+        }
+
+        .about-container img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 30px;
+            border: 4px solid #041d8c;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .about-container img:hover {
+            transform: scale(1.1);
+        }
+
+        .skills-section {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+
+        .skill-box {
+            background-color: #041d8c;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+            margin-bottom: 50px;
+        }
+
+        .skill-box:hover {
+            background-color: #041d8c;
+            transform: translateY(-10px);
+        }
+
+                /* Call to Action Button */
+                .cta-button {
+            background-color: #041d8c;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: all 0.3s ease-in-out;
+            display: inline-block;  /* Ensure it is block-level */
+            width: auto;  /* Button width adjusts to text */
+            margin-left: auto;
+            margin-right: auto;  /* Center button */
+            
+            
+        }
+
+        .cta-button:hover {
+            background-color: #1ea0e1;
+            transform: scale(1.05);
+        }
+
+        /* Style for LinkedIn icon */
+        .linkedin-icon {
+    display: block;  /* Block-level to ensure stacking */
+    margin-top: 20px;  /* Space between button and icon */
+    font-size: 2rem;  /* Icon size */
+    color: #0077b5;  /* LinkedIn's signature blue color */
+    text-decoration: none;  /* Remove underline */
+    transition: color 0.3s ease;  /* Smooth color transition on hover */
+    text-align: center;  /* Center the icon */
+    margin-left: auto;
+    margin-right: auto;  /* Center icon */
+    font-size: 3rem;
+}
+
+.linkedin-icon:hover {
+    color: #005582;  /* Darker shade on hover */
+}
+
+.linkedin {
+margin-top: 20px;
+}
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0; /* Add padding to the top and bottom of the footer */
+            margin-top: 20px;
+            position: relative;
+            width: 100%;
+
+        }
+
+       
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .skills-section {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .skill-box {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        
+    .card-container {
+        justify-content: center;
+    }
+    .card {
+        width: 100%; /* One card per row on smaller screens */
+    }
+
+    /* Hide nav links and show hamburger menu on mobile */
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    /* Hide nav links on mobile by default */
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    /* Show nav links when hamburger is clicked */
+    .nav-links.active {
+        display: flex;
+    }
+
+    /* Show hamburger icon on mobile */
+    .hamburger {
+        display: flex;
+    }
+
+    .header-image {
+        margin-right: 0;  /* Remove right margin */
+        margin-bottom: 20px;  /* Add space below the image */
+    }
+
+        /* Call to Action Button */
+        .cta-button {
+            background-color: #041d8c;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 30px;
+            transition: all 0.3s ease-in-out;
+            display: block;  /* Ensure it is block-level */
+            width: auto;  /* Button width adjusts to text */
+            margin-left: auto;
+            margin-right: auto;  /* Center button */
+            display: block;
+        }
+
+        .cta-button:hover {
+            background-color: #1ea0e1;
+            transform: scale(1.05);
+        }
+
+        /* Style for LinkedIn icon */
+        .linkedin-icon {
+    display: block;  /* Block-level to ensure stacking */
+    margin-top: 20px;  /* Space between button and icon */
+    font-size: 2rem;  /* Icon size */
+    color: #0077b5;  /* LinkedIn's signature blue color */
+    text-decoration: none;  /* Remove underline */
+    transition: color 0.3s ease;  /* Smooth color transition on hover */
+    text-align: center;  /* Center the icon */
+    margin-left: auto;
+    margin-right: auto;  /* Center icon */
+}
+
+.linkedin-icon:hover {
+    color: #005582;  /* Darker shade on hover */
+}
+
+.linkedin {
+margin-top: 20px;
+}
+    }
+    </style>
+</head>
+<!-- Header Section -->
+<header>
+    <div class="header-content">
+        <img src="assets/images/logo_notext.png" alt="Illustrated Eyeball" class="header-image">
+        <div class="header-text">
+            <h1>Pam Tholan</h1>
+            <p class="header-description">UX/UI Designer</p>
+        </div>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<body> 
+    <!-- About Me Section -->
+    <div class="about-container">
+        <!-- Profile Image -->
+        <img src="https://via.placeholder.com/150" alt="Your Photo">
+
+        <!-- Personal Introduction -->
+        <h2>Hi, I'm Pam Tholan</h2>
+        <p>I'm a passionate web developer with a love for creating interactive and user-friendly websites. I enjoy learning new technologies and applying them to solve real-world problems. In my free time, I like to explore new tech trends and work on personal projects.</p>
+
+        <!-- Skills Section -->
+        <div class="skills-section">
+            <div class="skill-box">
+                <h3>Web Development</h3>
+                <p>HTML, CSS, JavaScript, React</p>
+            </div>
+            <div class="skill-box">
+                <h3>UI/UX Design</h3>
+                <p>Wireframing, Prototyping, User Research</p>
+            </div>
+            <div class="skill-box">
+                <h3>Graphic Design</h3>
+                <p>Photoshop, Illustrator, Figma</p>
+            </div>
+        </div>
+
+         <!-- Call to Action -->
+        <div>
+         <a href="#contact" class="cta-button">Let's Connect</a>
+        </div>
+
+         <!-- LinkedIn Icon -->
+          <div class="linkedin">
+         <a href="https://www.linkedin.com/in/pamela-tholan" class="linkedin-icon" target="_blank">
+             <i class="fab fa-linkedin"></i> <!-- LinkedIn Icon -->
+         </a>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Pam Tholan</p>
+    </footer>
+
+    <script src="assets/javascript/script.js"></script>
+</body>
+</html>
