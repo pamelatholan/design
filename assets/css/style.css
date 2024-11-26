@@ -133,8 +133,8 @@ main {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    height: 400px; /* Fixed height for consistency */
+    width: 400px;
+    height: 360px; /* Fixed height for consistency */
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -150,15 +150,23 @@ main {
 
 /* Card Content */
 .card-title {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 10px;
 }
 
 .card-description {
-    flex-grow: 1; /* Allow description to take up available space */
+    flex-grow: 1;
     padding: 0 10px;
-    font-size: 1rem;
+    font-size: .750rem;
     line-height: 1.5;
+}
+
+.detail {
+    font-size: .800rem;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-right: 10px;
+    list-style-type: none;
 }
 
 .card-button {
@@ -171,6 +179,12 @@ main {
     text-align: center;
     margin: 10px;
     border-radius: 4px;
+    
+}
+
+.btext {
+    color: white;
+    text-decoration: none;
 }
 
 .card-button:hover {
