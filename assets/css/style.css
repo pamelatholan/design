@@ -134,11 +134,12 @@ main {
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     width: 400px;
-    height: 360px; /* Fixed height for consistency */
+    height: 375px; /* Fixed height for consistency */
     display: flex;
     flex-direction: column;
     overflow: hidden;
     margin-bottom: 20px;
+    overflow-x: hidden;
 }
 
 /* Card Image */
