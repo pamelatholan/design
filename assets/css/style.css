@@ -292,7 +292,106 @@ footer {
       width: 80%;
       margin: 10px auto;
     }
-  }
+
+    .skills-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+.card-container {
+justify-content: center;
+}
+.card {
+width: 100%; /* One card per row on smaller screens */
+}
+
+/* Hide nav links and show hamburger menu on mobile */
+.nav-links {
+display: none;
+width: 100%;
+flex-direction: column;
+text-align: center;
+padding: 10px 0;
+}
+
+.nav-links.active {
+display: flex;
+}
+
+/* Hide nav links on mobile by default */
+.nav-links {
+display: none;
+width: 100%;
+flex-direction: column;
+text-align: center;
+padding: 10px 0;
+}
+
+/* Show nav links when hamburger is clicked */
+.nav-links.active {
+display: flex;
+}
+
+/* Show hamburger icon on mobile */
+.hamburger {
+display: flex;
+}
+
+.header-image {
+margin-right: 0;  /* Remove right margin */
+margin-bottom: 20px;  /* Add space below the image */
+}
+
+/* Call to Action Button */
+.cta-button {
+    background-color: #041d8c;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    transition: all 0.3s ease-in-out;
+    display: block;  /* Ensure it is block-level */
+    width: auto;  /* Button width adjusts to text */
+    margin-left: auto;
+    margin-right: auto;  /* Center button */
+    display: block;
+}
+
+.cta-button:hover {
+    background-color: #1ea0e1;
+    transform: scale(1.05);
+}
+
+/* Style for LinkedIn icon */
+.linkedin-icon {
+display: block;  /* Block-level to ensure stacking */
+margin-top: 20px;  /* Space between button and icon */
+font-size: 2rem;  /* Icon size */
+color: #0077b5;  /* LinkedIn's signature blue color */
+text-decoration: none;  /* Remove underline */
+transition: color 0.3s ease;  /* Smooth color transition on hover */
+text-align: center;  /* Center the icon */
+margin-left: auto;
+margin-right: auto;  /* Center icon */
+}
+
+.linkedin-icon:hover {
+color: #005582;  /* Darker shade on hover */
+}
+
+.linkedin {
+margin-top: 20px;
+}
+}
+
+  
   
 
 
@@ -372,4 +471,5 @@ footer {
             font-size: 14px;
         }
     }
+
 }
