@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 /* Body and Basic Styles */
@@ -10,6 +11,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
+    overflow-x: hidden;
     
 }
 
@@ -112,6 +114,7 @@ h1 {
 /* Main Content Area */
 main {
     padding: 20px;
+    
 }
 .bio {
     padding-bottom: 20px;
@@ -126,6 +129,7 @@ main {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    
 }
 
 /* Individual Card Styles */
@@ -147,6 +151,8 @@ main {
     width: 100%;
     height: 200px; /* Fixed height for image */
     object-fit: cover;
+    padding: 5px;
+    
 }
 
 /* Card Content */
