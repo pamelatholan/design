@@ -273,6 +273,76 @@ footer {
     padding: 10px;
     border-radius: 5px;
   }
+
+
+  /* Work Page */
+
+/* Section Layout */
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;  /* Ensures content aligns to the top */
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+/* Content (text) section */
+.content {
+    flex: 1;
+    padding: 20px;
+    transform: translateX(-100%);  /* Initially hide the content to the left */
+    opacity: 0;  /* Make the content invisible initially */
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;  /* Smooth transition */
+}
+
+.content.in-view {
+    transform: translateX(0);  /* Slide into view */
+    opacity: 1;  /* Fade in */
+}
+
+.content h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.content p {
+    font-size: 1.1em;
+}
+
+
+/* Image Section */
+.image {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align image at the top of the container */
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Alternating Layout: Left for Content, Right for Image */
+.section:nth-child(even) .content {
+    order: 2;
+}
+
+.section:nth-child(even) .image {
+    order: 1;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
   
   /* Responsive Design */
   @media (max-width: 768px) {
@@ -395,6 +465,28 @@ color: #005582;  /* Darker shade on hover */
 .linkedin {
 margin-top: 20px;
 }
+
+ /* Stack content and image vertically */
+ .section {
+    flex-direction: column;
+}
+
+/* Ensure the image and content are centered on small screens */
+.image,
+.content {
+    padding: 10px;
+}
+
+/* Alternate layout for smaller screens (text above image) */
+.section:nth-child(even) .content {
+    order: 1;
+}
+
+.section:nth-child(even) .image {
+    order: 2;
+}
+
+
 }
 
   

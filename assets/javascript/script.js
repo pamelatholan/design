@@ -24,3 +24,19 @@ document.addEventListener('click', (event) => {
         hamburger.classList.remove('hidden');
     }
 });
+
+// Detect if an element is in view
+function checkInView() {
+    const elements = document.querySelectorAll('.content'); // Target .content elements
+    elements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+            el.classList.add('in-view');  // Add 'in-view' class when element is visible
+        }
+    });
+}
+
+// Check on scroll and when the page loads
+window.addEventListener('scroll', checkInView);
+window.addEventListener('load', checkInView);
+

@@ -1,0 +1,204 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and header styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+
+/* Header Content Flexbox */
+.header-content {
+    display: flex;
+    justify-content:left; /* Space between the description and navigation */
+    align-items: center; /* Vertically center content */
+    width: 100%; /* Ensure the content takes full width */
+}
+
+
+.header-image {
+    width: 100px; /* Set a fixed width for the image */
+    height: auto; /* Maintain the aspect ratio of the image */
+    margin-right: 20px; /* Space between the image and the text */
+    border-radius: 50%; /* Optional: To make the image circular */
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    text-align: left; /* Optional: explicitly left-align h1 */
+    font-family: "Megrim", system-ui;
+    
+}
+
+.header-description {
+    font-size: 1.1rem;
+    color: #f4f4f4;
+    text-align: left; /* Optional: explicitly left-align description */
+    font-family: "Orbitron", sans-serif;
+    margin-left: 10px;
+}
+
+/* Navigation Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    padding-right: 20px;
+    padding-top: 60px;
+    padding-left: 680px;
+    margin-left: 30px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s, text-decoration 0.3s;
+    font-family: "Orbitron", sans-serif;
+}
+
+.nav-links a:hover {
+    color: #f4f4f4;
+    text-decoration: underline;
+}
+
+/* Hamburger Menu styles (shown when hamburger is clicked) */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 70px;
+    margin-top: -90px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+/* Hide the hamburger icon when the menu is open */
+.hamburger.hidden {
+    display: none;
+}
+
+
+h1 {
+    font-size: 2.5em;
+}
+
+/* Gallery layout */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+    grid-template-rows: auto; /* Let rows adjust based on content height */
+    grid-auto-rows: 300px; /* Set a default height for rows, can be adjusted */
+}
+
+.photo {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Makes sure the image fills the container */
+    display: block;
+}
+
+/* Description styling */
+.description {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    width: calc(100% - 40px);
+}
+
+.description h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.description p {
+    font-size: 1em;
+    margin-bottom: 0;
+}
+
+/* Large photo - takes up more grid space */
+.photo.large {
+    grid-column: span 2;  /* Makes the element span across two columns */
+    grid-row: span 2;     /* Makes the element span across two rows */
+}
+
+/* Small photo - takes up one grid space */
+.photo.small {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0; /* Add padding to the top and bottom of the footer */
+    position: relative;
+    width: 100%;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: 1fr; /* Single column layout for smaller screens */
+    }
+
+    .photo.large {
+        grid-column: span 1;
+        grid-row: span 1; /* Make large photos stack normally on smaller screens */
+    }
+
+    .description {
+        position: static;
+        background-color: transparent;
+        color: #333;
+        padding: 10px;
+        border-radius: 0;
+    }
+}
