@@ -41,7 +41,11 @@
         /* About Me section */
        
         .about-container {
-            background-color: #fff;
+            /* background-color: #fff; */
+            background-image: url(assets/images/pexels-edward-jenner-4252666.jpg);
+            background-size: cover; /* Ensures the image covers the entire screen */
+            background-position: center; /* Centers the image */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             overflow: hidden;
@@ -86,13 +90,13 @@
         }
 
         .skill-box {
-            background-color: #041d8c;
+            background-color: #333;
             color: white;
             padding: 20px;
             border-radius: 10px;
             width: 300px;
             text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgb(255, 255, 255);
             transition: all 0.3s ease-in-out;
             margin-bottom: 20px;
         }
@@ -104,13 +108,14 @@
 
                 /* Call to Action Button */
                 .contact-button {
-            background-color: #041d8c;
+            background-color: #333;
             color: white;
             padding: 15px 30px;
             font-size: 18px;
             text-decoration: none;
             border-radius: 5px;
             margin-top: 10px;
+            box-shadow: 0 4px 8px rgb(255, 255, 255);
             transition: all 0.3s ease-in-out;
             display: inline-block;  /* Ensure it is block-level */
             width: auto;  /* Button width adjusts to text */
@@ -127,20 +132,22 @@
 
         /* Style for LinkedIn icon */
         .linkedin-icon {
-    display: block;  /* Block-level to ensure stacking */
+    display: inline-block;
     margin-top: 20px;  /* Space between button and icon */
     font-size: 2rem;  /* Icon size */
-    color: #0077b5;  /* LinkedIn's signature blue color */
+    color: #ffffff;  
     text-decoration: none;  /* Remove underline */
     transition: color 0.3s ease;  /* Smooth color transition on hover */
     text-align: center;  /* Center the icon */
     margin-left: auto;
     margin-right: auto;  /* Center icon */
     font-size: 3rem;
+
 }
 
 .linkedin-icon:hover {
-    color: #005582;  /* Darker shade on hover */
+    /* color: #c0c0c0; */
+    color: #0077b5  /* LinkedIn's signature blue color */
 }
 
 .linkedin {
@@ -227,48 +234,6 @@ margin-top: 20px;
         margin-bottom: 20px;  /* Add space below the image */
     }
 
-        /* Call to Action Button */
-        .contact-button {
-            background-color: #041d8c;
-            color: white;
-            padding: 15px 30px;
-            font-size: 18px;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 30px;
-            transition: all 0.3s ease-in-out;
-            display: block;  /* Ensure it is block-level */
-            width: auto;  /* Button width adjusts to text */
-            margin-left: auto;
-            margin-right: auto;  /* Center button */
-            display: block;
-        }
-
-        .contact-button:hover {
-            background-color: #1ea0e1;
-            transform: scale(1.05);
-        }
-
-        /* Style for LinkedIn icon */
-        .linkedin-icon {
-    display: block;  /* Block-level to ensure stacking */
-    margin-top: 20px;  /* Space between button and icon */
-    font-size: 2rem;  /* Icon size */
-    color: #0077b5;  /* LinkedIn's signature blue color */
-    text-decoration: none;  /* Remove underline */
-    transition: color 0.3s ease;  /* Smooth color transition on hover */
-    text-align: center;  /* Center the icon */
-    margin-left: auto;
-    margin-right: auto;  /* Center icon */
-}
-
-.linkedin-icon:hover {
-    color: #005582;  /* Darker shade on hover */
-}
-
-.linkedin {
-margin-top: 20px;
-}
     }
     </style>
 </head>
@@ -320,12 +285,12 @@ margin-top: 20px;
                 <p>HTML, CSS, JavaScript, React</p>
             </div>
             <div class="skill-box">
-                <h3>UI/UX Design</h3>
+                <h3>UX/UI Design</h3>
                 <p>Wireframing, Prototyping, User Research</p>
             </div>
             <div class="skill-box">
                 <h3>Graphic Design</h3>
-                <p>Photoshop, Illustrator, Figma</p>
+                <p>Photoshop, Illustrator, ProCreate</p>
             </div>
         </div>
 
