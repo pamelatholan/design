@@ -10,9 +10,13 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    /* background-image: url('../images/pexels-edward-jenner-4252666.jpg');
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat;  */
     color: #333;
     overflow-x: hidden;
-    
+        
 }
 
 /* Header */
@@ -114,8 +118,9 @@ h1 {
 /* Main Content Area */
 main {
     padding: 20px;
-    
+        
 }
+
 .bio {
     padding-bottom: 20px;
     /* font-family: "Garamond", sans-serif; */
@@ -129,7 +134,7 @@ main {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    
+                
 }
 
 /* Individual Card Styles */
@@ -483,17 +488,7 @@ margin-top: 20px;
 .section:nth-child(even) .image {
     order: 2;
 }
-
-
 }
-
-  
-  
-
-
-
-
-
 
 
 /* Media Queries for Responsiveness */
