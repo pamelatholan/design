@@ -190,9 +190,7 @@ main {
     
 }
 
-.card-button a {
-    display: block; /* Make the <a> tag a block-level element */
-}
+
 
 .btext {
     color: white;
