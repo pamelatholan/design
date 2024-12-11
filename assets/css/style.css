@@ -186,6 +186,7 @@ main {
     text-align: center;
     margin: 10px;
     border-radius: 4px;
+    display: block;
     
 }
 
