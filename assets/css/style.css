@@ -197,6 +197,7 @@ main {
 .btext {
     color: white;
     text-decoration: none;
+    display: block;
 }
 
 .card-button:hover {
