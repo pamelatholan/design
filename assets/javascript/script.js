@@ -40,3 +40,4 @@ function checkInView() {
 window.addEventListener('scroll', checkInView);
 window.addEventListener('load', checkInView);
 
+
