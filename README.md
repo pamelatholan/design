@@ -1,2 +1,2 @@
-# ux-ui
+# design
 UX/UI Portfolio
