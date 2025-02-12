@@ -287,7 +287,7 @@ footer {
     flex-wrap: wrap;
     align-items: flex-start;  /* Ensures content aligns to the top */
     padding: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 5px;
 }
 
 /* Content (text) section */
@@ -297,6 +297,7 @@ footer {
     transform: translateX(-100%);  /* Initially hide the content to the left */
     opacity: 0;  /* Make the content invisible initially */
     transition: transform 0.6s ease-out, opacity 0.6s ease-out;  /* Smooth transition */
+    margin-top: 50px;
 }
 
 .content.in-view {
