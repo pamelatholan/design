@@ -126,6 +126,8 @@ main {
     /* font-family: "Garamond", sans-serif; */
     text-align: center;
     font-size: 18px;
+    color: #041d8c;
+    
 }
 
 /* Card Container */
@@ -134,7 +136,7 @@ main {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-                
+                    
 }
 
 /* Individual Card Styles */
@@ -259,6 +261,7 @@ footer {
   .bio {
     flex: 1;
     padding-right: 20px;
+    
   }
   
   .bio h1 {
