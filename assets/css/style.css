@@ -118,7 +118,7 @@ h1 {
 /* Main Content Area */
 main {
     padding: 20px;
-        
+            
 }
 
 .bio {
@@ -136,7 +136,7 @@ main {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-                    
+                        
 }
 
 /* Individual Card Styles */
@@ -151,6 +151,7 @@ main {
     overflow: hidden;
     margin-bottom: 20px;
     overflow-x: hidden;
+    
 }
 
 /* Card Image */
@@ -257,6 +258,7 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
   }
+  
   
   .bio {
     flex: 1;
